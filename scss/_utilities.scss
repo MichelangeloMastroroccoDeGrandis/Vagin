@@ -1,0 +1,118 @@
+//Container
+$container: 1200px;
+$bg-container: 500px;
+
+.container {
+  max-width: $container;
+  margin: auto;
+}
+
+// Wrap
+
+.wrap {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2em;
+}
+
+// Font
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+// Colors
+$yellow: #ffc200;
+$red: #ff12a3;
+$orange: #ff6600;
+$blue: #6ed6ff;
+$purple: #991199;
+
+$medium-grey: #707070;
+
+// Padding
+
+.py {
+  &-1 {
+    padding: 1em 0;
+  }
+  &-2 {
+    padding: 2em 0;
+  }
+  &-3 {
+    padding: 3em 0;
+  }
+  &-4 {
+    padding: 4em 0;
+  }
+}
+
+// Margin
+
+.my {
+  &-1 {
+    margin: 1em 0;
+  }
+  &-2 {
+    margin: 2em 0;
+  }
+  &-3 {
+    margin: 3em 0;
+  }
+  &-4 {
+    margin: 4em 0;
+  }
+}
+
+// Background
+.bg {
+  &-yellow {
+    background: $yellow;
+    color: #fff;
+  }
+
+  &-red {
+    background: $red;
+    color: #fff;
+  }
+
+  &-orange {
+    background: $orange;
+    color: #fff;
+  }
+
+  &-blue {
+    background: $blue;
+    color: #fff;
+  }
+}
+
+// Button
+
+.btn {
+  border: 2px solid;
+  border-radius: 50px;
+  padding: 0.5rem 1.25rem;
+  width: 100%;
+  max-width: 100px;
+  text-align: center;
+
+  &-blue {
+    border-color: $blue;
+    color: $blue;
+    &:hover {
+      color: #fff;
+      background: $blue;
+      transition: all 500ms;
+    }
+  }
+  &-red {
+    border-color: $red;
+    color: $red;
+    &:hover {
+      color: #fff;
+      background: $red;
+      transition: all 500ms;
+    }
+  }
+}
