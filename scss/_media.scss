@@ -1,0 +1,12 @@
+@media screen and (max-width: 1000px) {
+    // Home A
+    #home {
+        &-a {
+            .container {
+                display: grid;
+            }
+        }
+    }
+}
+
+

@@ -11,7 +11,7 @@ $(function () {
     $(window).scroll(function () {
       var yPos = -($window.scrollTop() / $bgobj.data("speed"));
 
-      var coords = "50% " + yPos + "px";
+      var coords = "50%" + yPos + "px";
 
       $bgobj.css({ backgroundPosition: coords });
     });

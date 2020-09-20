@@ -42,10 +42,14 @@
     </section>
 
     <!-- Section B: Info -->
-    <section id="home-b" class="my-2 py-2" >
+    <section id="home-b" class="my-2" data-type="background" data-speed="5" style="background: url('img/bg_bottle.jpg'); background-repeat: no-repeat; background-size: cover;">
       <div class="wrap">
         <div class="img" >
-            <img src="img/bottle.jpg" alt="" />
+          <picture>
+            <source media="(max-width:800px)" srcset="img/bottle.jpg">
+            <img src="" alt="" />
+          </picture>
+          
         </div>
 
         <div class="bg-red">
