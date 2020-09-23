@@ -73,7 +73,8 @@
       transition: all 500ms; }
 
 * {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  text-rendering: optimizeLegibility; }
 
 body {
   margin: 0;
@@ -117,8 +118,8 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr); }
   #home-a .container .home-gif img {
-    transform: rotate(90deg) translate(10%, -30%);
-    width: 550px; }
+    transform: translate(10%, -10%);
+    width: 350px; }
 
 #home-b .wrap .bg-red {
   clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
@@ -222,14 +223,25 @@ img {
     grid-template-columns: repeat(1, 1fr);
     text-align: center; }
     #home-a .container .home-btn {
-      grid-template-columns: repeat(2, 1fr); }
+      grid-template-columns: repeat(2, 1fr);
+      margin: 0 4em; }
       #home-a .container .home-btn a.btn {
         margin: auto; }
+    #home-a .container .home-gif img {
+      display: block;
+      transform: translate(0%, 0%);
+      width: 100%;
+      max-width: 300px;
+      margin: auto; }
   #home-b {
     background: none !important; }
-    #home-b .container {
-      display: block; }
-  #home-c {
-    background: none !important; }
-    #home-c .container {
-      display: block; } }
+  #home-c .wrap .bg-orange ul li:nth-child(2) form {
+    display: block; }
+    #home-c .wrap .bg-orange ul li:nth-child(2) form input {
+      margin: 0; }
+      #home-c .wrap .bg-orange ul li:nth-child(2) form input[type="button"] {
+        width: inherit;
+        margin: 1em 0;
+        padding: .5em 1em;
+        background-color: #6ed6ff;
+        color: #fff; } }

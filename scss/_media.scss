@@ -1,3 +1,6 @@
+@media screen and (max-width: 550px) {
+    
+}
 @media screen and (max-width: 1000px) {
 
     .container {
@@ -5,40 +8,66 @@
     }
    
     #home {
-        
-        // Home A
+        // Section A
         &-a {
-           .container {
-            grid-template-columns: repeat(1, 1fr);
-            text-align: center;
-
+            .container {
+                grid-template-columns: repeat(1, 1fr);
+                text-align: center;
             .home {
+                // CTA button
                 &-btn {
                     grid-template-columns: repeat(2, 1fr);
+                    margin: 0 4em;
 
                     a.btn {
                         margin: auto;
                     }
                 }
+                // GIF
+                &-gif {
+                    
+                    img {
+                        display: block;
+                        transform: translate(0%, 0%);
+                        width: 100%;
+                        max-width: 300px;
+                        margin: auto;
+                        }
+                    }
+                }
             }
         }
-        }
-
         // Home B
         &-b {
             background: none !important;
-
-            .container {
-                display: block;
-            }
         }
 
         // Home C
         &-c {
-            background: none !important;
+            .wrap {
+                .bg-orange {
+                    ul {
+                        li {
+                            &:nth-child(2) {
+                                form {
+                                    display: block;
+                                    input {
+                                        margin: 0;
+                                        &[type="button"] {
+                                            width: inherit;
+                                            margin: 1em 0;
+                                            padding: .5em 1em;
+                                            background-color: $blue;
+                                            color: #fff;
+                                        }
+                                    }
+                                }
 
-            .container {
-                display: block;
+                            }
+                        }
+                    }
+                }
+                
             }
         }
     }

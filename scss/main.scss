@@ -5,6 +5,8 @@
 
 * {
   font-family: "Open Sans", sans-serif;
+  text-rendering: optimizeLegibility;
+  
 }
 
 body {
@@ -76,8 +78,8 @@ img {
         // GIF
         &-gif {
           img {
-            transform: rotate(90deg) translate(10%, -30%);
-            width: 550px;
+            transform: translate(10%, -10%);
+            width: 350px;
           }
         }
       }
