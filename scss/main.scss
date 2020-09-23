@@ -38,6 +38,7 @@ img {
     clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
 
     img {
+      margin: 0 4em;
       width: 100px;
     }
   }
@@ -47,6 +48,7 @@ img {
 #home {
   // Section A
   &-a {
+    margin: 0 4em;
     .container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
