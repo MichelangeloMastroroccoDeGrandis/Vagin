@@ -223,13 +223,16 @@ img {
   .wrap {
     grid-template-columns: repeat(1, 1fr); }
   .btn {
-    margin: 2em; }
+    margin: 2em;
+    max-width: 150px; }
   #home-a .container .home-title h1 {
     font-size: 48px; }
   #home-a .container .home-title .lead {
     font-size: 28px; }
   #home-a .container .home-btn {
-    display: block;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-gap: 1em;
     margin: 0 !important; }
   #home-b .wrap .bg-red {
     clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%); }

@@ -6,6 +6,7 @@
 
     .btn {
         margin: 2em;
+        max-width: 150px;
     }
 
     #home {
@@ -22,7 +23,9 @@
                         }
                     }
                     &-btn {
-                        display: block;
+                        display: grid;
+                        grid-template-columns: repeat(1, 1fr) !important;
+                        grid-gap: 1em;
                         margin: 0 !important;
                     }
                 }
