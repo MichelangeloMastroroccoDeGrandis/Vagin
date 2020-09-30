@@ -1,5 +1,5 @@
 //Smooth Scrolling
-$('#navbar a').on('click', function(event) {
+$('#home-btn a').on('click', function(event) {
 	if(this.hash !== '') {
 		event.preventDefault();
 		
