@@ -189,7 +189,8 @@ img {
             #home-c .wrap .bg-orange ul li:nth-child(2) form input[type="button"] {
               padding: 0 1em;
               background-color: #6ed6ff;
-              color: #fff; }
+              color: #fff;
+              -webkit-border-radius: 0px; }
               #home-c .wrap .bg-orange ul li:nth-child(2) form input[type="button"]:active {
                 background: #ff12a3; }
               #home-c .wrap .bg-orange ul li:nth-child(2) form input[type="button"]:focus {
