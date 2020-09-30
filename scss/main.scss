@@ -35,6 +35,10 @@ img {
 // Header
 #header {
   .header-a {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+    -moz-clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+    -ms-clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+    -o-clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
 
     img {
@@ -80,6 +84,8 @@ img {
         // GIF
         &-gif {
           img {
+            -webkit-transform: translate(10%, -10%);
+            -ms-transform: translate(10%, -10%);
             transform: translate(10%, -10%);
           }
         }
@@ -91,13 +97,21 @@ img {
     .wrap {
       // Text
       .bg-red {
+        -webkit-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+        -moz-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+        -ms-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+        -o-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
         clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+        -webkit-transform: scaleX(1.2) translateX(-8.4%);
+        -ms-transform: scaleX(1.2) translateX(-8.4%);
         transform: scaleX(1.2) translateX(-8.4%);
 
         p {
           font-size: 32px;
           font-size: 1.5vw;
           margin: 0 20% 0 30%;
+          -webkit-transform: scaleX(0.9) translateX(9.9999%);
+          -ms-transform: scaleX(0.9) translateX(9.9999%);
           transform: scaleX(0.9) translateX(9.9999%);
         }
       }
@@ -116,7 +130,13 @@ img {
       // Text
       .bg-orange {
         display: flex;
+        -webkit-clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+        -moz-clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+        -ms-clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+        -o-clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
         clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+        -webkit-transform: scaleX(1.5) translateX(16.6%);
+        -ms-transform: scaleX(1.5) translateX(16.6%);
         transform: scaleX(1.5) translateX(16.6%);
 
         ul {
@@ -230,6 +250,8 @@ img {
       .img {
         width: 75%;
         margin: auto auto 0;
+        -webkit-transform: translate(-30%);
+        -ms-transform: translate(-30%);
         transform: translate(-30%);
         position: relative;
         z-index: -1;
@@ -241,6 +263,10 @@ img {
 // footer
 #footer {
   .footer-a {
+    -webkit-clip-path: polygon(0 50%, 100% 0, 100% 100%, 0% 100%);
+    -moz-clip-path: polygon(0 50%, 100% 0, 100% 100%, 0% 100%);
+    -ms-clip-path: polygon(0 50%, 100% 0, 100% 100%, 0% 100%);
+    -o-clip-path: polygon(0 50%, 100% 0, 100% 100%, 0% 100%);
     clip-path: polygon(0 50%, 100% 0, 100% 100%, 0% 100%);
     text-align: center;
     padding-bottom: 1em;

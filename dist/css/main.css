@@ -95,6 +95,10 @@ img {
   font-size: 36px; }
 
 #header .header-a {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+  -moz-clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+  -ms-clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+  -o-clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%); }
   #header .header-a img {
     margin: 0 4em;
@@ -121,15 +125,25 @@ img {
       display: grid;
       grid-template-columns: repeat(3, 1fr); }
     #home-a .container .home-gif img {
+      -webkit-transform: translate(10%, -10%);
+      -ms-transform: translate(10%, -10%);
       transform: translate(10%, -10%); }
 
 #home-b .wrap .bg-red {
+  -webkit-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+  -moz-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+  -ms-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+  -o-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
   clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+  -webkit-transform: scaleX(1.2) translateX(-8.4%);
+  -ms-transform: scaleX(1.2) translateX(-8.4%);
   transform: scaleX(1.2) translateX(-8.4%); }
   #home-b .wrap .bg-red p {
     font-size: 32px;
     font-size: 1.5vw;
     margin: 0 20% 0 30%;
+    -webkit-transform: scaleX(0.9) translateX(9.9999%);
+    -ms-transform: scaleX(0.9) translateX(9.9999%);
     transform: scaleX(0.9) translateX(9.9999%); }
 
 #home-b .wrap .img {
@@ -138,7 +152,13 @@ img {
 
 #home-c .wrap .bg-orange {
   display: flex;
+  -webkit-clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+  -moz-clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+  -ms-clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+  -o-clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+  -webkit-transform: scaleX(1.5) translateX(16.6%);
+  -ms-transform: scaleX(1.5) translateX(16.6%);
   transform: scaleX(1.5) translateX(16.6%); }
   #home-c .wrap .bg-orange ul {
     margin: 0px 12%;
@@ -206,11 +226,17 @@ img {
 #home-c .wrap .img {
   width: 75%;
   margin: auto auto 0;
+  -webkit-transform: translate(-30%);
+  -ms-transform: translate(-30%);
   transform: translate(-30%);
   position: relative;
   z-index: -1; }
 
 #footer .footer-a {
+  -webkit-clip-path: polygon(0 50%, 100% 0, 100% 100%, 0% 100%);
+  -moz-clip-path: polygon(0 50%, 100% 0, 100% 100%, 0% 100%);
+  -ms-clip-path: polygon(0 50%, 100% 0, 100% 100%, 0% 100%);
+  -o-clip-path: polygon(0 50%, 100% 0, 100% 100%, 0% 100%);
   clip-path: polygon(0 50%, 100% 0, 100% 100%, 0% 100%);
   text-align: center;
   padding-bottom: 1em; }
@@ -218,7 +244,7 @@ img {
     color: #fff;
     padding: 2em; }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 750px) {
   .wrap {
     grid-template-columns: repeat(1, 1fr); }
   #home-b .wrap {
@@ -237,13 +263,23 @@ img {
     grid-gap: 1em;
     margin: 0 !important; }
   #home-b .wrap .bg-red {
+    -webkit-clip-path: polygon(0 15%, 100% 0%, 100% 90%, 0% 100%);
+    -ms-clip-path: polygon(0 15%, 100% 0%, 100% 90%, 0% 100%);
+    -o-clip-path: polygon(0 15%, 100% 0%, 100% 90%, 0% 100%);
+    -moz-clip-path: polygon(0 15%, 100% 0%, 100% 90%, 0% 100%);
     clip-path: polygon(0 15%, 100% 0%, 100% 90%, 0% 100%); }
     #home-b .wrap .bg-red p {
       font-size: 1.2em;
       margin: 2em 20% 2em 30%; }
   #home-c .wrap .bg-orange {
     display: block;
+    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+    -ms-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+    -o-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+    -moz-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
     clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+    -webkit-transform: scaleX(1) translateX(0%);
+    -ms-transform: scaleX(1) translateX(0%);
     transform: scaleX(1) translateX(0%); }
     #home-c .wrap .bg-orange ul {
       margin: 2em;
@@ -291,6 +327,8 @@ img {
   #home-c .wrap .img {
     width: 100%;
     margin: auto auto 0;
+    -webkit-transform: translateY(-10%);
+    -ms-transform: translateY(-10%);
     transform: translateY(-10%);
     position: relative;
     z-index: -1; } }
@@ -310,6 +348,8 @@ img {
           margin: auto; }
       #home-a .container .home-gif img {
         display: block;
+        -webkit-transform: translate(0%, 0%);
+        -ms-transform: translate(0%, 0%);
         transform: translate(0%, 0%);
         width: 100%;
         margin: auto; }
