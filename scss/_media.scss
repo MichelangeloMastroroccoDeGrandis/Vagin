@@ -1,30 +1,148 @@
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 1000px) {
+
+    .container {
+        padding: 0 2em;
+    }
+
+    #header {
+        .header-a {
+            .container {
+                p {
+                    img {
+                        display: initial;
+                    }
+                    
+                }
+            }
+        }
+    }
+   
+    #home {
+        // Section A
+        &-a {
+            margin: 0;
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+                text-align: center;
+            .home {
+                // CTA button
+                &-btn {
+                    grid-template-columns: repeat(2, 1fr);
+                    margin: 0 4em;
+
+                    a.btn {
+                        margin: auto;
+                    }
+                }
+                // GIF
+                &-gif {
+                    
+                    img {
+                        display: block;
+                        -webkit-transform: translate(0%, -10%) scale(1.1);
+                        -ms-transform: translate(0%, -10%) scale(1.1);
+                        transform: translate(0%, -10%) scale(1.1);
+                        width: 100%;
+                        margin: auto;
+                        }
+                    }
+                }
+            }
+        }
+        // Home B
+        &-b {
+            background: none !important;
+        }
+
+        // Home C
+        &-c {
+            .wrap {
+                .bg-orange {
+                    ul {
+                        margin: 0px 6%;
+                        margin: 0px 3vw; 
+                        padding: 2em 0;
+
+                        li {
+                            &:nth-child(2) {
+                                form {
+                                    display: block;
+                                    input {
+                                        margin: 0;
+                                        &[type="button"] {
+                                            width: inherit;
+                                            margin: 1em 0;
+                                            padding: .5em 1em;
+                                            background-color: $blue;
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .img {
+                    img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        width: 100%;
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 813px) {
+    
     // General
-    .wrap {
+    .wrap, .container {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    #home-b .wrap {
-        display: flex;
-        flex-direction: column-reverse;
-    }
 
     .btn {
         margin: 2em;
         max-width: 150px;
     }
 
+    #header {
+        .header-a {
+            .container {
+                p {
+                    img {
+                        display: grid;
+                        margin: auto;
+                    }
+                    
+                }
+            }
+        }
+    }
+
     #home {
         // Section A
         &-a {
             .container {
+                grid-template-columns: repeat(1, 1fr);
                 .home {
+                    
                     &-title {
                         h1 {
-                            font-size: 48px;
+                            font-size: 84px;
+                            font-size: 15vh;
                         }
                         .lead {
-                            font-size: 28px;
+                            font-size: 46px;
+                            font-size: 8vh;
                         }
                     }
                     &-btn {
@@ -39,6 +157,8 @@
         // Home B
         &-b {
             .wrap {
+                display: flex;
+                flex-direction: column-reverse;
                 // Text
                 .bg-red {
                     -webkit-clip-path: polygon(0 15%, 100% 0%, 100% 90%, 0% 100%);
@@ -159,100 +279,17 @@
             .img {
                 width: 100%;
                 margin: auto auto 0;
-                -webkit-transform: translateY(-10%);
-                -ms-transform: translateY(-10%);
-                transform: translateY(-10%);
+                -webkit-transform: translateY(-5%) scaleY(1.6);
+                -ms-transform: translateY(-5%) scaleY(1.6);
+                transform: translateY(-5%) scaleY(1.6);
                 position: relative;
                 z-index: -1;
+
+                img {
+                    position: relative;
+                }
             }
             }
         }
     }
 }
-@media screen and (max-width: 1000px) {
-
-    .container {
-        padding: 0 2em;
-    }
-
-    #header {
-        .header-a {
-            .container {
-                p {
-                    img {
-                        display: grid;
-                        margin: auto;
-                    }
-                    
-                }
-            }
-        }
-    }
-   
-    #home {
-        // Section A
-        &-a {
-            margin: 0;
-            .container {
-                grid-template-columns: repeat(1, 1fr);
-                text-align: center;
-            .home {
-                // CTA button
-                &-btn {
-                    grid-template-columns: repeat(2, 1fr);
-                    margin: 0 4em;
-
-                    a.btn {
-                        margin: auto;
-                    }
-                }
-                // GIF
-                &-gif {
-                    
-                    img {
-                        display: block;
-                        -webkit-transform: translate(0%, 0%);
-                        -ms-transform: translate(0%, 0%);
-                        transform: translate(0%, 0%);
-                        width: 100%;
-                        margin: auto;
-                        }
-                    }
-                }
-            }
-        }
-        // Home B
-        &-b {
-            background: none !important;
-        }
-
-        // Home C
-        &-c {
-            .wrap {
-                .bg-orange {
-                    ul {
-                        li {
-                            &:nth-child(2) {
-                                form {
-                                    display: block;
-                                    input {
-                                        margin: 0;
-                                        &[type="button"] {
-                                            width: inherit;
-                                            margin: 1em 0;
-                                            padding: .5em 1em;
-                                            background-color: $blue;
-                                            color: #fff;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-
