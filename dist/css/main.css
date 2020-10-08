@@ -190,6 +190,7 @@ img {
               padding: 0 1em;
               background-color: #6ed6ff;
               color: #fff;
+              border-radius: 0px;
               -webkit-border-radius: 0px; }
               #home-c .wrap .bg-orange ul li:nth-child(2) form input[type="button"]:active {
                 background: #ff12a3; }

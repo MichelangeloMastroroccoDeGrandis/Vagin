@@ -184,7 +184,8 @@ img {
                     padding: 0 1em;
                     background-color: $blue;
                     color: #fff;
-                    -webkit-border-radius:0px;
+                    border-radius: 0px;
+                    -webkit-border-radius: 0px;
 
                     &:active {
                       background: $red;
