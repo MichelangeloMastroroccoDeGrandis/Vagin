@@ -251,7 +251,7 @@ img {
     color: #fff;
     padding: 2em; }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1300px) {
   .container {
     padding: 0 2em; }
   #header .header-a .container p img {
@@ -279,16 +279,22 @@ img {
     margin: 0px 6%;
     margin: 0px 3vw;
     padding: 2em 0; }
+    #home-c .wrap .bg-orange ul li:nth-child(2)[type="text"] {
+      max-width: calc(100% - 1em); }
     #home-c .wrap .bg-orange ul li:nth-child(2) form {
       display: block; }
       #home-c .wrap .bg-orange ul li:nth-child(2) form input {
+        width: 100%;
         margin: 0; }
+        #home-c .wrap .bg-orange ul li:nth-child(2) form input[type="text"] {
+          max-width: calc(100% - 1em); }
         #home-c .wrap .bg-orange ul li:nth-child(2) form input[type="button"] {
           width: inherit;
           margin: 1em 0;
           padding: .5em 1em;
           background-color: #6ed6ff;
-          color: #fff; }
+          color: #fff;
+          min-width: 100%; }
   #home-c .wrap .img img {
     position: absolute;
     top: 0;
@@ -350,14 +356,6 @@ img {
         padding-top: 2em; }
       #home-c .wrap .bg-orange ul li:nth-child(2) {
         max-width: 100%; }
-        #home-c .wrap .bg-orange ul li:nth-child(2) form {
-          display: block; }
-          #home-c .wrap .bg-orange ul li:nth-child(2) form input {
-            width: 100%; }
-            #home-c .wrap .bg-orange ul li:nth-child(2) form input[type="text"] {
-              max-width: calc(100% - 1em); }
-            #home-c .wrap .bg-orange ul li:nth-child(2) form input[type="button"] {
-              min-width: 100%; }
       #home-c .wrap .bg-orange ul li:nth-child(3) {
         max-width: 100%;
         font-size: 1.2em; }

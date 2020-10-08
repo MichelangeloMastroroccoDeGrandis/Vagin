@@ -1,5 +1,5 @@
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1300px) {
 
     .container {
         padding: 0 2em;
@@ -66,16 +66,33 @@
 
                         li {
                             &:nth-child(2) {
+                                
+                                    
+                                    
+                                    // Email
+                                    &[type="text"] {
+                                        max-width: calc(100% - 1em);
+                                        
+                                    }
+            
+                                    
                                 form {
                                     display: block;
                                     input {
+                                        width: 100%;
                                         margin: 0;
+
+                                        &[type="text"] {
+                                            max-width: calc(100% - 1em);
+                                        }
+
                                         &[type="button"] {
                                             width: inherit;
                                             margin: 1em 0;
                                             padding: .5em 1em;
                                             background-color: $blue;
                                             color: #fff;
+                                            min-width: 100%;
                                         }
                                     }
                                 }
@@ -206,25 +223,6 @@
                     //Newsletter
                     &:nth-child(2) {
                     max-width: 100%;
-
-                    form {
-                        display: block;
-
-                        input {
-                        width: 100%;
-
-                        // Email
-                        &[type="text"] {
-                            max-width: calc(100% - 1em);
-                            
-                        }
-
-                        &[type="button"] {
-                            min-width: 100%;
-
-                        }
-                        }
-                    }
                     }
 
                     // App
