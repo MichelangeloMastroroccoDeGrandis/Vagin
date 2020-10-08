@@ -95,6 +95,9 @@ img {
   margin: 0;
   font-size: 36px; }
 
+.white-space {
+  height: 82px; }
+
 #header .header-a {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
   -moz-clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
@@ -118,17 +121,17 @@ img {
       letter-spacing: 5px;
       color: #991199;
       margin: 0; }
-      #home-a .container .home-title h1 span {
-        color: #ff12a3; }
     #home-a .container .home-title .lead {
       color: #707070; }
+      #home-a .container .home-title .lead span {
+        color: #ff12a3; }
     #home-a .container .home-btn {
       display: grid;
       grid-template-columns: repeat(3, 1fr); }
     #home-a .container .home-gif img {
-      -webkit-transform: translate(10%, -10%);
-      -ms-transform: translate(10%, -10%);
-      transform: translate(10%, -10%); }
+      -webkit-transform: translate(0%, -10%);
+      -ms-transform: translate(0%, -10%);
+      transform: translate(0%, -10%); }
 
 #home-b .wrap .bg-red {
   -webkit-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
