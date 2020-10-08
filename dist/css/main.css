@@ -76,7 +76,7 @@
   font-family: "Open Sans", sans-serif;
   text-rendering: optimizeLegibility; }
 
-body {
+html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden; }
@@ -251,7 +251,7 @@ img {
     color: #fff;
     padding: 2em; }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1000px) {
   .container {
     padding: 0 2em; }
   #header .header-a .container p img {
@@ -349,7 +349,7 @@ img {
     transform: scaleX(1) translateX(0%); }
     #home-c .wrap .bg-orange ul {
       margin: 2em;
-      padding: 3em; }
+      padding: 0; }
       #home-c .wrap .bg-orange ul li:nth-child(1) {
         max-width: 100%;
         font-size: 1.5em;
