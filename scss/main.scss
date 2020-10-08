@@ -12,6 +12,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 p {
@@ -250,11 +251,11 @@ img {
 
       // Image
       .img {
-        width: 75%;
-        margin: auto auto 0;
-        -webkit-transform: translate(-30%);
-        -ms-transform: translate(-30%);
-        transform: translate(-30%);
+        width: 100%;
+        margin: 0;
+        -webkit-transform: translate(-20%) scaleX(1.5);
+        -ms-transform: translate(-20%) scaleX(1.5);
+        transform: translate(-20%) scaleX(1.5);
         position: relative;
         z-index: -1;
       }
