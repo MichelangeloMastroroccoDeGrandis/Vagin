@@ -127,7 +127,8 @@ img {
         color: #ff12a3; }
     #home-a .container .home-btn {
       display: grid;
-      grid-template-columns: repeat(3, 1fr); }
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 2em; }
     #home-a .container .home-gif img {
       -webkit-transform: translate(0%, -10%);
       -ms-transform: translate(0%, -10%);
@@ -250,7 +251,7 @@ img {
     color: #fff;
     padding: 2em; }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
   .wrap {
     grid-template-columns: repeat(1, 1fr); }
   #home-b .wrap {
