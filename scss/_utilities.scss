@@ -115,3 +115,14 @@ $medium-grey: #707070;
     }
   }
 }
+
+// Button
+button {
+  background: #fff;
+}
+
+// Blur
+.blur {
+  filter: blur(12px);
+  -webkit-filter: blur(12px);
+}

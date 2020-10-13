@@ -1,9 +1,13 @@
 onload = function() {
-    $('section').css('filter', 'blur(12px)');
-    $('header').css('filter', 'blur(12px)');
-    $('footer').css('filter', 'blur(12px)');
-    $('section').css('-webkit-filter', 'blur(12px)');
-    $('header').css('-webkit-filter', 'blur(12px)');
-    $('footer').css('-webkit-filter', 'blur(12px)');
-    
+    $('section').addClass('blur');
+    $('header').addClass('blur');
+    $('footer').addClass('blur');    
 }
+
+$('#age-confirmed').bind('click', function() {
+
+        $('section').removeClass('blur');
+        $('header').removeClass('blur');
+        $('footer').removeClass('blur');
+        $('#age_validification').remove();
+    });

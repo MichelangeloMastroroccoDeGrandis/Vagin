@@ -72,6 +72,13 @@
       background: #ff12a3;
       transition: all 500ms; }
 
+button {
+  background: #fff; }
+
+.blur {
+  filter: blur(12px);
+  -webkit-filter: blur(12px); }
+
 * {
   font-family: "Open Sans", sans-serif;
   text-rendering: optimizeLegibility; }
@@ -264,17 +271,41 @@ img {
     max-width: 500px;
     height: 100%;
     max-height: 300px;
+    position: relative;
     background: white;
     margin: calc(50vh - 150px) auto;
-    padding: 2em;
     text-align: center; }
-    #age_validification .modal p {
-      margin-bottom: 2em; }
-      #age_validification .modal p img {
-        max-width: 75px; }
-    #age_validification .modal a {
+    #age_validification .modal .inner {
       width: 100%;
-      min-width: 200px; }
+      height: 100%;
+      position: absolute;
+      top: 0;
+      -webkit-clip-path: polygon(0 50%, 100% 0, 100% 100%, 0% 100%);
+      -moz-clip-path: polygon(0 50%, 100% 0, 100% 100%, 0% 100%);
+      -ms-clip-path: polygon(0 50%, 100% 0, 100% 100%, 0% 100%);
+      -o-clip-path: polygon(0 50%, 100% 0, 100% 100%, 0% 100%);
+      clip-path: polygon(0 0, 30% 0, 60% 100%, 0% 100%); }
+    #age_validification .modal-inner {
+      position: relative;
+      padding: 2em;
+      z-index: 1; }
+      #age_validification .modal-inner-logo {
+        margin-bottom: 2em; }
+        #age_validification .modal-inner-logo img {
+          max-width: 75px; }
+      #age_validification .modal-inner-wrap {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2.5em; }
+        #age_validification .modal-inner-wrap-text {
+          text-align: left;
+          color: #fff;
+          font-size: 1.25rem;
+          transform: translateY(-50%); }
+        #age_validification .modal-inner-wrap-link button {
+          width: 100%;
+          max-width: 150px;
+          font-size: 1rem; }
 
 @media screen and (max-width: 1000px) {
   .container {
