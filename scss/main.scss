@@ -74,10 +74,14 @@ img {
             margin: 0;
           }
           .lead {
+            font-size: 48px;
             color: $medium-grey;
+            font-family: 'Staatliches', cursive;
             
             span {
               color: $red;
+              font-family: 'Indie Flower', cursive;
+              padding: 0 .25em;
             }
           }
         }
@@ -136,6 +140,8 @@ img {
       // Text
       .bg-orange {
         display: flex;
+        align-items: center;
+        justify-content: center;
         -webkit-clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
         -moz-clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
         -ms-clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
@@ -169,38 +175,39 @@ img {
               max-width: 50%;
 
               form {
-                display: flex;
-                justify-content: space-between;
-
+                display: block;
                 input {
-                  width: 100%;
-                  padding: 0.5em;
-                  margin-right: 1.5em;
-                  border: none;
+                    width: 100%;
+                    margin: 0;
 
-                  // Email
-                  &[type="text"] {
-                    color: #ccc;
-                    &:focus {
-                      outline: 2px solid $blue;
-                    }
-                  }
-
-                  &[type="button"] {
-                    padding: 0 1em;
-                    background-color: $blue;
-                    color: #fff;
-                    border-radius: 0px;
-                    -webkit-border-radius: 0px;
-
-                    &:active {
-                      background: $red;
+                    &[type="text"] {
+                        max-width: calc(100% - 1.5em);
+                        border: 0;
+                        -webkit-border-radius: 0;
+                        border-radius: 0;
+                        padding: .5em;
                     }
 
-                    &:focus {
-                      outline: none;
+                    &[type="button"] {
+                        width: inherit;
+                        min-width: calc(100% - .5em);
+                        margin: 1em 0;
+                        padding: .5em 1em;
+                        background-color: $blue;
+                        color: #fff;
+                        border: 0;
+                        -webkit-border-radius: 0;
+                        border-radius: 0;
+                        
+
+                        &:active {
+                          background: $red;
+                        }
+    
+                        &:focus {
+                          outline: none;
+                        }
                     }
-                  }
                 }
               }
             }
@@ -285,6 +292,7 @@ img {
   }
 }
 
+// Age Wall
 #age_validification {
   display: block;
   position: fixed;

@@ -19,6 +19,8 @@ $bg-container: 500px;
 // Font
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 
 // Colors
 $yellow: #ffc200;
@@ -119,6 +121,11 @@ $medium-grey: #707070;
 // Button
 button {
   background: #fff;
+}
+
+// Input
+input:focus {
+  outline: none;
 }
 
 // Blur
