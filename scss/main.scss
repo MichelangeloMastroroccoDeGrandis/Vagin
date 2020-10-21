@@ -47,7 +47,7 @@ img {
     clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
 
     img {
-      margin: 0 4em;
+      margin: 0;
       width: 100px;
     }
   }
@@ -88,16 +88,14 @@ img {
         // CTA button
         &-btn {
           display: grid;
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(2, 1fr);
           grid-gap: 2em;
         }
         // GIF
         &-gif {
-          img {
-            -webkit-transform: translate(0%, -10%);
-            -ms-transform: translate(0%, -10%);
-            transform: translate(0%, -10%);
-          }
+          -webkit-transform: translate(0%, -35%);
+            -ms-transform: translate(0%, -35%);
+            transform: translate(0%, -35%);
         }
       }
     }
@@ -343,7 +341,7 @@ img {
       &-wrap {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 2.5em;
+        max-height: 60px;
         
         &-text {
           text-align: left;
