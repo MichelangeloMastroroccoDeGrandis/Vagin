@@ -23,7 +23,7 @@
         &-a {
             margin: 0;
             .container {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(1, 1fr);
                 text-align: center;
             .home {
                 // CTA button
@@ -37,15 +37,12 @@
                 }
                 // GIF
                 &-gif {
-                    
-                    img {
-                        display: block;
+                    display: block;
                         -webkit-transform: translate(0%, -10%) scale(1.1);
                         -ms-transform: translate(0%, -10%) scale(1.1);
                         transform: translate(0%, -10%) scale(1.1);
                         width: 100%;
                         margin: auto;
-                        }
                     }
                 }
             }
@@ -163,6 +160,7 @@
                             font-size: 8vh;
                         }
                     }
+
                     &-btn {
                         display: grid;
                         grid-template-columns: repeat(1, 1fr) !important;
@@ -179,15 +177,15 @@
                 flex-direction: column-reverse;
                 // Text
                 .bg-red {
-                    -webkit-clip-path: polygon(0 15%, 100% 0%, 100% 90%, 0% 100%);
-                    -ms-clip-path: polygon(0 15%, 100% 0%, 100% 90%, 0% 100%);
-                    -o-clip-path: polygon(0 15%, 100% 0%, 100% 90%, 0% 100%);
-                    -moz-clip-path: polygon(0 15%, 100% 0%, 100% 90%, 0% 100%);
-                    clip-path: polygon(0 15%, 100% 0%, 100% 90%, 0% 100%);
+                    -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+                    -ms-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+                    -o-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+                    -moz-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+                    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
 
                   p {
                     font-size: 1.2em;
-                    margin: 2em 20% 2em 30%;
+                    margin: 2em 4em;
                   }
                 }
             }
@@ -315,7 +313,7 @@
   
       &-inner {
         &-logo {  
-          margin-bottom: 2em;
+          margin-bottom: 4em;
           img {
             max-width: 75px;
           }
@@ -324,7 +322,7 @@
         &-wrap {
           display: grid;
           grid-template-columns: repeat(1, 1fr);
-          grid-gap: .5em;
+          grid-gap: 4em;
 
           &-text {
               transform: translateY(0);

@@ -430,14 +430,14 @@ img {
   #home-a {
     margin: 0; }
     #home-a .container {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
       text-align: center; }
       #home-a .container .home-btn {
         grid-template-columns: repeat(2, 1fr);
         margin: 0 4em; }
         #home-a .container .home-btn a.btn {
           margin: auto; }
-      #home-a .container .home-gif img {
+      #home-a .container .home-gif {
         display: block;
         -webkit-transform: translate(0%, -10%) scale(1.1);
         -ms-transform: translate(0%, -10%) scale(1.1);
@@ -501,14 +501,14 @@ img {
     display: flex;
     flex-direction: column-reverse; }
     #home-b .wrap .bg-red {
-      -webkit-clip-path: polygon(0 15%, 100% 0%, 100% 90%, 0% 100%);
-      -ms-clip-path: polygon(0 15%, 100% 0%, 100% 90%, 0% 100%);
-      -o-clip-path: polygon(0 15%, 100% 0%, 100% 90%, 0% 100%);
-      -moz-clip-path: polygon(0 15%, 100% 0%, 100% 90%, 0% 100%);
-      clip-path: polygon(0 15%, 100% 0%, 100% 90%, 0% 100%); }
+      -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+      -ms-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+      -o-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+      -moz-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+      clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%); }
       #home-b .wrap .bg-red p {
         font-size: 1.2em;
-        margin: 2em 20% 2em 30%; }
+        margin: 2em 4em; }
   #home-c .wrap .bg-orange {
     display: block;
     -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
@@ -578,12 +578,12 @@ img {
       -o-clip-path: polygon(0 50%, 100% 30%, 100% 100%, 0% 100%);
       clip-path: polygon(0 50%, 100% 30%, 100% 100%, 0% 100%); }
     #age_validification .modal-inner-logo {
-      margin-bottom: 2em; }
+      margin-bottom: 4em; }
       #age_validification .modal-inner-logo img {
         max-width: 75px; }
     #age_validification .modal-inner-wrap {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
-      grid-gap: .5em; }
+      grid-gap: 4em; }
       #age_validification .modal-inner-wrap-text {
         transform: translateY(0); } }
