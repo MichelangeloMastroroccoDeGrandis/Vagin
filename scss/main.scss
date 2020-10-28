@@ -66,6 +66,7 @@ img {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 2em;
+      max-height: 400px;
       .home {
         // Title
         &-title {
@@ -272,6 +273,10 @@ img {
         transform: translate(-20%) scaleX(1.5);
         position: relative;
         z-index: -1;
+
+        img {
+          height: 100%;
+        }
       }
     }
   }

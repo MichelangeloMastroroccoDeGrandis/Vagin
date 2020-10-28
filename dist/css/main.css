@@ -226,7 +226,8 @@ img {
   #home-a .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2em; }
+    grid-gap: 2em;
+    max-height: 400px; }
     #home-a .container .home-title h1 {
       font-family: "Bebas Neue", cursive;
       font-size: 93px;
@@ -360,6 +361,8 @@ img {
   transform: translate(-20%) scaleX(1.5);
   position: relative;
   z-index: -1; }
+  #home-c .wrap .img img {
+    height: 100%; }
 
 #footer .footer-a {
   -webkit-clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
@@ -438,7 +441,8 @@ img {
     margin: 0; }
     #home-a .container {
       grid-template-columns: repeat(1, 1fr);
-      text-align: center; }
+      text-align: center;
+      max-height: none; }
       #home-a .container .home-btn {
         grid-template-columns: repeat(2, 1fr);
         margin: 0 4em; }
@@ -582,6 +586,13 @@ img {
       max-height: 125px; }
       #home-c .wrap .img img {
         position: relative; }
+  #footer .footer-a {
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    -moz-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    -ms-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    -o-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    padding: 5em 0 2em 0; }
   #age_validification .modal {
     max-width: 300px;
     max-height: 400px;
