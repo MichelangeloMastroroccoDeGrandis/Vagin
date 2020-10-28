@@ -508,7 +508,9 @@ img {
       margin: 0 !important;
       padding: 0 2em; }
       #home-a .container .home-btn .btn-flip-red, #home-a .container .home-btn .btn-flip-orange {
-        min-width: 500px;
+        width: 100%;
+        min-width: 150px;
+        max-width: 500px;
         margin: auto; }
   #home-b .wrap {
     display: flex;
