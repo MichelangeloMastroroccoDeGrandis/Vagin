@@ -10,14 +10,14 @@
       integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
       crossorigin="anonymous"
     />
-
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
     <title>Vagin | Gin al Pepe Rosa</title>
   </head>
   <body>
     
     <!-- Header -->
     <header id="header">
-      <div class="header-a bg-yellow py-2">
+      <div class="header-a bg-yellow py-4">
         <div class="container">
           <p><img src="img/logo.png" alt="logo vagin" /></p>
         </div>
@@ -71,7 +71,7 @@
     <div class="white-space"></div>
 
     <!-- Section C: Info -->
-    <section id="home-c" class="my-2" >
+    <section id="home-c">
       <div class="wrap">
         <div class="bg-orange">
           <ul>
@@ -119,9 +119,44 @@
 
     <!-- Footer -->
     <footer id="footer">
-      <div class="footer-a bg-blue py-4">
+      <div class="footer-a bg-blue">
         <div class="container">
-          <p>Footer</p>
+          <p>Copyright © 2019. All Rights Reserved</p>
+          <p><a href="">Privacy Policy</a></p>
+          <p><a href="">Terms of Use</a></p>
+          <p><script type="text/javascript">
+            var first = "YYY";
+
+            var last = "gmail.com";
+            document.write(
+              '<a href="mailto:' +
+                first +
+                "@" +
+                last +
+                '" style="color: #fff">' +
+                first +
+                "@" +
+                last +
+                "<\/a>"
+            );
+          </script></p>
+          <p><script type="text/javascript">
+            var first = "xxx";
+
+            
+            document.write(
+              '<a href="tel:' +
+                first +
+                '" >' +
+                first +
+                "<\/a>"
+            );
+          </script></p>
+          <p>Indirizzo</p>
+          <p>P. Iva</p>
+          <a href="#"><i class="fab fa-facebook-f fa-2x social"></i></a>
+          <a href="#"><i class="fab fa-instagram fa-2x social"></i></a>
+          <p>Mission (optional)</p>
         </div>
       </div>
     </footer>
@@ -139,12 +174,33 @@
       </div>
     </div>
     
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#000000",
+          "text": "#ff12a3"
+        },
+        "button": {
+          "background": "transparent",
+          "border": "#ffc200",
+          "text": "#ffc200"
+        }
+      },
+      "position": "bottom-right",
+      "content": {
+        "message": "Queso sito fa uso di cookie per assicurare la migliore esperienza di navigazione.\nPer maggiori informazioni clicca",
+        "dismiss": "Ho capito",
+        "link": "qui"
+      }
+    });
+    </script>
+
     <!-- JS, Popper.js, and jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/parallax.js"></script>
     <script src="js/smooth.js"></script>
     <script src="js/age_validification.js"></script>
-
-
   </body>
 </html>

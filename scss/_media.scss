@@ -136,6 +136,8 @@
                     img {
                         display: grid;
                         margin: auto;
+                        width: 150px;
+                        padding-bottom: 3em;
                     }
                     
                 }
@@ -166,6 +168,12 @@
                         grid-template-columns: repeat(1, 1fr) !important;
                         grid-gap: 1em;
                         margin: 0 !important;
+                        padding: 0 2em;
+
+                        .btn-flip-red, .btn-flip-orange {
+                            min-width: 500px;
+                            margin: auto;
+                        }
                     }
                 }
             }
@@ -193,7 +201,7 @@
         // Section C
         &-c {
             .wrap {
-            // Text
+                grid-gap: 0;
             .bg-orange {
                 display: block;
                 -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
@@ -276,11 +284,12 @@
             .img {
                 width: 100%;
                 margin: auto auto 0;
-                -webkit-transform: translateY(-5%) scaleY(1.6);
-                -ms-transform: translateY(-5%) scaleY(1.6);
-                transform: translateY(-5%) scaleY(1.6);
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
                 position: relative;
                 z-index: -1;
+                max-height: 125px;
 
                 img {
                     position: relative;

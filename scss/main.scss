@@ -15,6 +15,10 @@ html, body {
   overflow-x: hidden;
 }
 
+body {
+  overflow: hidden;
+}
+
 p {
   line-height: 1.5;
   margin: 0;
@@ -276,16 +280,24 @@ img {
 // footer
 #footer {
   .footer-a {
-    -webkit-clip-path: polygon(0 50%, 100% 0, 100% 100%, 0% 100%);
-    -moz-clip-path: polygon(0 50%, 100% 0, 100% 100%, 0% 100%);
-    -ms-clip-path: polygon(0 50%, 100% 0, 100% 100%, 0% 100%);
-    -o-clip-path: polygon(0 50%, 100% 0, 100% 100%, 0% 100%);
-    clip-path: polygon(0 50%, 100% 0, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
+    -moz-clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
+    -ms-clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
+    -o-clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
     text-align: center;
-    padding-bottom: 1em;
+    padding: 10em 0 5em 0;
     p {
       color: #fff;
-      padding: 2em;
+      padding: .5em;
+    }
+
+    a {
+      color: #fff;
+    }
+
+    .social {
+      margin: 0 .5em;
     }
   }
 }
