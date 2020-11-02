@@ -6,7 +6,6 @@
 * {
   font-family: "Open Sans", sans-serif;
   text-rendering: optimizeLegibility;
-  
 }
 
 html, body {
@@ -60,7 +59,7 @@ img {
 }
 
 .white-space {
-  height: 82px;
+  height: 100px;
 }
 
 // Header
@@ -74,7 +73,7 @@ img {
 
     img {
       margin: 0;
-      width: 100px;
+      width: 150px;
     }
   }
 }
@@ -88,7 +87,6 @@ img {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 2em;
-      max-height: 400px;
       .home {
         // Title
         &-title {
@@ -99,6 +97,7 @@ img {
             letter-spacing: 5px;
             color: $purple;
             margin: 0;
+            padding-top: 1em;
           }
           .lead {
             font-size: 48px;
@@ -107,22 +106,34 @@ img {
             
             span {
               color: $red;
-              font-family: 'Indie Flower', cursive;
               padding: 0 .25em;
+              font-family: 'Staatliches', cursive;
             }
           }
         }
         // CTA button
         &-btn {
+
           display: grid;
           grid-template-columns: repeat(2, 1fr);
           grid-gap: 2em;
         }
         // GIF
         &-gif {
-          -webkit-transform: translate(0%, -35%);
+          position: relative;
+          img {
+            max-width: 500px;
+            -webkit-transform: translate(0%, -35%);
             -ms-transform: translate(0%, -35%);
             transform: translate(0%, -35%);
+          }
+
+          .home-btn {
+            position: absolute;
+            top: 65%;
+            width: 100%;
+          }
+          
         }
       }
     }
@@ -141,14 +152,18 @@ img {
         -ms-transform: scaleX(1.2) translateX(-8.4%);
         transform: scaleX(1.2) translateX(-8.4%);
 
-        p {
-          font-size: 32px;
-          font-size: 1.5vw;
-          margin: 0 20% 0 30%;
-          -webkit-transform: scaleX(0.9) translateX(9.9999%);
-          -ms-transform: scaleX(0.9) translateX(9.9999%);
-          transform: scaleX(0.9) translateX(9.9999%);
+        div {
+          p {
+            font-size: 32px;
+            font-size: 1.5vw;
+            margin: 0 20% 0 30%;
+            text-align: justify;
+            -webkit-transform: scaleX(0.9) translateX(9.9999%);
+            -ms-transform: scaleX(0.9) translateX(9.9999%);
+            transform: scaleX(0.9) translateX(9.9999%);
+          }
         }
+        
       }
 
       // Image
@@ -164,18 +179,18 @@ img {
     .wrap {
       // Text
       .bg-orange {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        -webkit-clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
-        -moz-clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
-        -ms-clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
-        -o-clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
-        clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
-        -webkit-transform: scaleX(1.5) translateX(16.6%);
-        -ms-transform: scaleX(1.5) translateX(16.6%);
-        transform: scaleX(1.5) translateX(16.6%);
-
+          position: relative;
+          display: flex;
+          min-width: 125%;
+          flex-flow: column nowrap;
+          align-content: center;
+          justify-content: center;
+          -webkit-clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+          -moz-clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+          -ms-clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+          -o-clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%); 
+        
         ul {
           margin: 0px 12%;
           margin: 0px 6vw;
@@ -205,17 +220,19 @@ img {
                     width: 100%;
                     margin: 0;
 
-                    &[type="text"] {
+                    &[type="email"] {
                         max-width: calc(100% - 1.5em);
                         border: 0;
                         -webkit-border-radius: 0;
                         border-radius: 0;
+                        font-size: 22px;
                         padding: .5em;
                     }
 
-                    &[type="button"] {
+                    &[type="submit"] {
                         width: inherit;
                         min-width: calc(100% - .5em);
+                        font-size: 22px;
                         margin: 1em 0;
                         padding: .5em 1em;
                         background-color: $blue;
@@ -315,6 +332,7 @@ img {
     padding: 10em 0 5em 0;
     p {
       color: #fff;
+      font-size: 22px;
       padding: .5em;
     }
 
@@ -389,7 +407,7 @@ img {
         }
 
         &-link {
-          button {
+          .btn {
             width: 100%;
             max-width: 150px;
             font-size: 1rem;

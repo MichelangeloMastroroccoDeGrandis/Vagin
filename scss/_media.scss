@@ -5,6 +5,10 @@
         padding: 0 2em;
     }
 
+    .white-space {
+        height: 50px;
+      }
+
     #header {
         .header-a {
             .container {
@@ -27,23 +31,29 @@
                 text-align: center;
                 max-height: none;
             .home {
-                // CTA button
-                &-btn {
-                    grid-template-columns: repeat(2, 1fr);
-                    margin: 0 4em;
-
-                    a.btn {
-                        margin: auto;
+                &-title {
+                    h1 {
+                        padding: 0 0 1em 0;
                     }
                 }
+               
                 // GIF
                 &-gif {
-                    display: block;
-                        -webkit-transform: translate(0%, -10%) scale(1.1);
-                        -ms-transform: translate(0%, -10%) scale(1.1);
-                        transform: translate(0%, -10%) scale(1.1);
-                        width: 100%;
-                        margin: auto;
+                    display: flex;
+                    flex-direction: column-reverse;
+                    width: 100%;
+                    margin: auto;
+
+                    img {
+                        transform: none;
+                        padding-bottom: 2em;
+                    }
+
+                    .home-btn {
+                        position: relative;
+                        width: initial;
+                        padding-bottom: 2em;
+                    }
                     }
                 }
             }
@@ -51,12 +61,26 @@
         // Home B
         &-b {
             background: none !important;
+            .wrap {
+                .bg-red {
+                    div {
+                         p {
+                            font-size: 28px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+            
         }
 
         // Home C
         &-c {
             .wrap {
                 .bg-orange {
+
+                    min-width: 100%;
+                    max-width: 100%;
                     ul {
                         margin: 0px 6%;
                         margin: 0px 3vw; 
@@ -64,27 +88,18 @@
 
                         li {
                             &:nth-child(2) {
-                                
-                                    
-                                    
-                                    // Email
-                                    &[type="text"] {
-                                        max-width: calc(100% - 1em);
-                                        
-                                    }
             
-                                    
                                 form {
                                     display: block;
                                     input {
                                         width: 100%;
                                         margin: 0;
 
-                                        &[type="text"] {
+                                        &[type="email"] {
                                             max-width: calc(100% - 1.5em);
                                         }
 
-                                        &[type="button"] {
+                                        &[type="submit"] {
                                             width: inherit;
                                             min-width: calc(100% - .5em);
                                             margin: 1em 0;
@@ -193,11 +208,12 @@
                     -o-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
                     -moz-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
                     clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
-
-                  p {
-                    font-size: 1.2em;
-                    margin: 2em 4em;
-                  }
+                    div {
+                        p {
+                            font-size: 22px;
+                        }
+                    }
+                  
                 }
             }
         }

@@ -1,5 +1,5 @@
 //Container
-$container: 1000px;
+$container: 1400px;
 $bg-container: 500px;
 
 .container {
@@ -19,8 +19,11 @@ $bg-container: 500px;
 // Font
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+
 
 // Colors
 $yellow: #ffc200;
@@ -267,3 +270,5 @@ input:focus {
   filter: blur(12px);
   -webkit-filter: blur(12px);
 }
+
+
