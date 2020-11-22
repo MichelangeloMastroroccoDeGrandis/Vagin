@@ -250,14 +250,21 @@ img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2em; }
-    #home-a .container .home-title h1 {
-      font-family: "Bebas Neue", cursive;
-      font-size: 93px;
-      font-weight: 100;
-      letter-spacing: 5px;
-      color: #991199;
-      margin: 0;
-      padding-top: 1em; }
+    #home-a .container .home-title .title {
+      border: 15px solid #6ed6ff;
+      padding: .5em 1.5em;
+      display: inline-block;
+      margin: 2em 0; }
+      #home-a .container .home-title .title h1 {
+        font-family: "Bebas Neue", cursive;
+        display: inline;
+        font-size: 93px;
+        font-weight: 100;
+        letter-spacing: 5px;
+        text-align: center;
+        color: #991199;
+        margin: 0em;
+        padding: .1em; }
     #home-a .container .home-title .lead {
       font-size: 48px;
       color: #707070;
@@ -324,25 +331,47 @@ img {
     #home-c .wrap .bg-orange ul li {
       padding: 1em 0; }
       #home-c .wrap .bg-orange ul li:nth-child(1) {
+        max-width: 70%;
+        font-size: 1.2vw; }
+      #home-c .wrap .bg-orange ul li:nth-child(2) {
+        max-width: 80%; }
+        #home-c .wrap .bg-orange ul li:nth-child(2) div {
+          position: relative;
+          display: inline-grid;
+          margin-right: 2em; }
+          #home-c .wrap .bg-orange ul li:nth-child(2) div a {
+            position: relative;
+            display: block;
+            font-size: 1.2vw;
+            color: #fff;
+            padding: 0 0.25em 0.5em;
+            transition: font-size 150ms; }
+            #home-c .wrap .bg-orange ul li:nth-child(2) div a:hover {
+              font-size: 1.5vw; }
+          #home-c .wrap .bg-orange ul li:nth-child(2) div .border-bottom {
+            width: 100%;
+            height: 1px;
+            background: #fff; }
+      #home-c .wrap .bg-orange ul li:nth-child(3) {
         max-width: 50%;
         font-size: 28px;
         font-size: 1.8vw;
         padding-top: 0; }
-      #home-c .wrap .bg-orange ul li:nth-child(2) {
+      #home-c .wrap .bg-orange ul li:nth-child(4) {
         max-width: 50%; }
-        #home-c .wrap .bg-orange ul li:nth-child(2) form {
+        #home-c .wrap .bg-orange ul li:nth-child(4) form {
           display: block; }
-          #home-c .wrap .bg-orange ul li:nth-child(2) form input {
+          #home-c .wrap .bg-orange ul li:nth-child(4) form input {
             width: 100%;
             margin: 0; }
-            #home-c .wrap .bg-orange ul li:nth-child(2) form input[type="email"] {
+            #home-c .wrap .bg-orange ul li:nth-child(4) form input[type="email"] {
               max-width: calc(100% - 1.5em);
               border: 0;
               -webkit-border-radius: 0;
               border-radius: 0;
               font-size: 22px;
               padding: .5em; }
-            #home-c .wrap .bg-orange ul li:nth-child(2) form input[type="submit"] {
+            #home-c .wrap .bg-orange ul li:nth-child(4) form input[type="submit"] {
               width: inherit;
               min-width: calc(100% - .5em);
               font-size: 22px;
@@ -353,32 +382,10 @@ img {
               border: 0;
               -webkit-border-radius: 0;
               border-radius: 0; }
-              #home-c .wrap .bg-orange ul li:nth-child(2) form input[type="submit"]:active {
+              #home-c .wrap .bg-orange ul li:nth-child(4) form input[type="submit"]:active {
                 background: #ff12a3; }
-              #home-c .wrap .bg-orange ul li:nth-child(2) form input[type="submit"]:focus {
+              #home-c .wrap .bg-orange ul li:nth-child(4) form input[type="submit"]:focus {
                 outline: none; }
-      #home-c .wrap .bg-orange ul li:nth-child(3) {
-        max-width: 70%;
-        font-size: 1.2vw; }
-      #home-c .wrap .bg-orange ul li:nth-child(4) {
-        max-width: 80%; }
-        #home-c .wrap .bg-orange ul li:nth-child(4) div {
-          position: relative;
-          display: inline-grid;
-          margin-right: 2em; }
-          #home-c .wrap .bg-orange ul li:nth-child(4) div a {
-            position: relative;
-            display: block;
-            font-size: 1.2vw;
-            color: #fff;
-            padding: 0 0.25em 0.5em;
-            transition: font-size 150ms; }
-            #home-c .wrap .bg-orange ul li:nth-child(4) div a:hover {
-              font-size: 1.5vw; }
-          #home-c .wrap .bg-orange ul li:nth-child(4) div .border-bottom {
-            width: 100%;
-            height: 1px;
-            background: #fff; }
       #home-c .wrap .bg-orange ul li:nth-child(5) {
         max-width: 70%;
         font-size: 1.2vw; }
@@ -404,13 +411,30 @@ img {
   -o-clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
   clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
   text-align: center;
-  padding: 10em 0 5em 0; }
+  padding: 3em 0 5em 0; }
+  #footer .footer-a .container {
+    display: flex;
+    justify-content: space-between; }
+    #footer .footer-a .container .left {
+      padding-top: 3em; }
+    #footer .footer-a .container .center {
+      padding-top: 7em; }
+  #footer .footer-a h3 {
+    font-size: 26px;
+    font-weight: 800; }
   #footer .footer-a p {
     color: #fff;
     font-size: 22px;
-    padding: .5em; }
+    font-weight: 800;
+    padding: 0;
+    margin: 0;
+    text-align: left; }
   #footer .footer-a a {
-    color: #fff; }
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 800;
+    margin: 0;
+    padding-bottom: .5em; }
   #footer .footer-a .social {
     margin: 0 .5em; }
 
@@ -526,7 +550,14 @@ img {
     left: 0;
     height: 100%;
     width: 100%;
-    z-index: -1; } }
+    z-index: -1; }
+  #footer .footer-a .container {
+    display: block;
+    margin-top: 2em; }
+    #footer .footer-a .container p {
+      font-size: 16px; }
+    #footer .footer-a .container a {
+      font-size: 14px; } }
 
 @media screen and (max-width: 813px) {
   .wrap, .container {
@@ -573,11 +604,11 @@ img {
     grid-gap: 0; }
     #home-c .wrap .bg-orange {
       display: block;
-      -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
-      -ms-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
-      -o-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
-      -moz-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
-      clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+      -webkit-clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+      -ms-clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+      -o-clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+      -moz-clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+      clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
       -webkit-transform: scaleX(1) translateX(0%);
       -ms-transform: scaleX(1) translateX(0%);
       transform: scaleX(1) translateX(0%); }
@@ -586,30 +617,31 @@ img {
         padding: 0; }
         #home-c .wrap .bg-orange ul li:nth-child(1) {
           max-width: 100%;
-          font-size: 1.5em;
-          padding-top: 2em; }
+          font-size: 1.2em;
+          margin-top: 2em; }
         #home-c .wrap .bg-orange ul li:nth-child(2) {
           max-width: 100%; }
-        #home-c .wrap .bg-orange ul li:nth-child(3) {
-          max-width: 100%;
-          font-size: 1.2em; }
-        #home-c .wrap .bg-orange ul li:nth-child(4) {
-          max-width: 100%; }
-          #home-c .wrap .bg-orange ul li:nth-child(4) div {
+          #home-c .wrap .bg-orange ul li:nth-child(2) div {
             position: relative;
             display: inline-grid;
             margin-right: 2em; }
-            #home-c .wrap .bg-orange ul li:nth-child(4) div a {
+            #home-c .wrap .bg-orange ul li:nth-child(2) div a {
               font-size: 1.2em;
               color: #fff;
               padding: 0 0.25em 0.5em;
               transition: color 150ms; }
-              #home-c .wrap .bg-orange ul li:nth-child(4) div a:hover {
+              #home-c .wrap .bg-orange ul li:nth-child(2) div a:hover {
                 font-size: 1.3em; }
-            #home-c .wrap .bg-orange ul li:nth-child(4) div .border-bottom {
+            #home-c .wrap .bg-orange ul li:nth-child(2) div .border-bottom {
               width: 100%;
               height: 1px;
               background: #fff; }
+        #home-c .wrap .bg-orange ul li:nth-child(3) {
+          max-width: 100%;
+          font-size: 1.2em;
+          padding-top: 2em; }
+        #home-c .wrap .bg-orange ul li:nth-child(4) {
+          max-width: 100%; }
         #home-c .wrap .bg-orange ul li:nth-child(5) {
           max-width: 100%;
           font-size: 1.2em; }
@@ -628,11 +660,11 @@ img {
       #home-c .wrap .img img {
         position: relative; }
   #footer .footer-a {
-    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-    -moz-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-    -ms-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-    -o-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
+    -moz-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
+    -ms-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
+    -o-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
     padding: 5em 0 2em 0; }
   #age_validification .modal {
     max-width: 300px;

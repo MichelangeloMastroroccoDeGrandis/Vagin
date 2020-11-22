@@ -127,6 +127,24 @@
             }
         }
     }
+
+    #footer {
+        .footer-a {
+            
+            .container {
+                display: block;
+                margin-top: 2em;
+
+                p {
+                    font-size: 16px;
+                }
+
+                a {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
 }
 
 
@@ -223,11 +241,11 @@
                 grid-gap: 0;
             .bg-orange {
                 display: block;
-                -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
-                -ms-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
-                -o-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
-                -moz-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
-                clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+                -webkit-clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+                -ms-clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+                -o-clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+                -moz-clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+                clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
                 -webkit-transform: scaleX(1) translateX(0%);
                 -ms-transform: scaleX(1) translateX(0%);
                 transform: scaleX(1) translateX(0%);
@@ -239,26 +257,16 @@
                 li {
                     // list elements
 
-                    //Title
+                    
+                    // App
                     &:nth-child(1) {
                     max-width: 100%;
-                    font-size: 1.5em;
-                    padding-top: 2em;
-                    }
-
-                    //Newsletter
-                    &:nth-child(2) {
-                    max-width: 100%;
-                    }
-
-                    // App
-                    &:nth-child(3) {
-                    max-width: 100%;
                     font-size: 1.2em;
+                    margin-top: 2em;
                     }
 
                     // Link
-                    &:nth-child(4) {
+                    &:nth-child(2) {
                     max-width: 100%;
 
                     div {
@@ -284,6 +292,18 @@
                         background: #fff;
                         }
                     }
+                    }
+                    
+                    //Title
+                    &:nth-child(3) {
+                    max-width: 100%;
+                    font-size: 1.2em;
+                    padding-top: 2em;
+                    }
+
+                    //Newsletter
+                    &:nth-child(4) {
+                    max-width: 100%;
                     }
 
                     &:nth-child(5) {
@@ -321,11 +341,11 @@
     #footer {
         .footer {
             &-a {
-                -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-                -moz-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-                -ms-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-                -o-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-                clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+                -webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
+                -moz-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
+                -ms-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
+                -o-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
+                clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
                 padding: 5em 0 2em 0;
             }
         }
