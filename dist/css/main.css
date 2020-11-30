@@ -417,6 +417,11 @@ img {
     justify-content: space-between; }
     #footer .footer-a .container .left {
       padding-top: 3em; }
+      #footer .footer-a .container .left p:nth-child(n + 1) {
+        width: 300px;
+        padding-bottom: .2em }
+        #footer .footer-a .container .left a {
+          color: #991199 }
     #footer .footer-a .container .center {
       padding-top: 7em; }
   #footer .footer-a h3 {
