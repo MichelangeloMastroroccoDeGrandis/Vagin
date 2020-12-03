@@ -343,23 +343,40 @@ img {
     -o-clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
     clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
     text-align: center;
-    padding: 3em 0 5em 0;
+    padding: 3em 2em 5em 2em;
       .container {
         display: flex;
         justify-content: space-between;
 
         .left {
           padding-top: 3em;
+          p {
+            width: 200px;
+            text-align: center;
+          }
+          a {
+            color: $purple;
+          }
         }
 
         .center {
           padding-top: 7em;
         }
-      }
-    
-      h3 {
-        font-size: 26px;
-        font-weight: 800;
+
+        .right {
+          h3 {
+            font-size: 26px;
+            font-weight: 900;
+            text-align: left;
+          }
+          ul {
+            list-style: none;
+            padding: 0;
+            li {
+              padding-bottom: 1em;
+            }
+          }
+        }
       }
 
     p {
