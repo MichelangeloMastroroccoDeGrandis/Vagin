@@ -11,11 +11,11 @@
 @media screen and (max-width: 1000px) {
 
     .container {
-        padding: 0 2em;
+        width: 90%;
     }
 
     .white-space {
-        height: 50px;
+        height: 75px;
       }
 
     #header {
@@ -211,7 +211,7 @@
                     img {
                         display: grid;
                         margin: auto;
-                        width: 150px;
+                        width: 100px;
                         padding-bottom: 3em;
                     }
                     
@@ -302,8 +302,8 @@
                     // App
                     &:nth-child(1) {
                     max-width: 100%;
-                    font-size: 1.2em;
-                    margin-top: 2em;
+                    font-size: 1.5em;
+                    padding-top: 3em;
                     }
 
                     // Link
@@ -317,13 +317,13 @@
 
                         a {
                         
-                        font-size: 1.2em;
+                        font-size: 1.5em;
                         color: #fff;
                         padding: 0 0.25em 0.5em;
                         transition: color 150ms;
 
                         &:hover {
-                            font-size: 1.3em;
+                            font-size: 1.8em;
                         }
                         }
 
@@ -338,7 +338,7 @@
                     //Title
                     &:nth-child(3) {
                     max-width: 100%;
-                    font-size: 1.2em;
+                    font-size: 1.5em;
                     padding-top: 2em;
                     }
 
@@ -349,7 +349,7 @@
 
                     &:nth-child(5) {
                     max-width: 100%;
-                    font-size: 1.2em;
+                    font-size: 1.5em;
                     }
 
                     i {
@@ -389,16 +389,23 @@
                 clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
                 padding: 5em 0 2em 0;
 
+                p {
+                    font-weight: 100;
+                    line-height: 2;
+                }
+
                 .container {
 
                     .center {
                         padding-top: .5em;
                         p {
                             text-align: center;
+                           
                             
                             img {
                                 width: 200px;
                                 margin: auto;
+                                padding: 2em;
                             }
                         }
                         
@@ -427,38 +434,54 @@
 #age_validification {
   
     .modal {
-      max-width: 300px;
-      max-height: 400px;
-      margin: calc(50vh - 250px) auto;
-      -webkit-box-shadow: 0px 0px 20px 0px rgba(92,86,92,1);
-      -moz-box-shadow: 0px 0px 20px 0px rgba(92,86,92,1);
-      box-shadow: 0px 0px 20px 0px rgba(92,86,92,1);
+        max-width: 90vw;
+        max-height: 90vh;
+        margin: auto;
+        position: absolute;
+        -webkit-box-shadow: 0px 0px 20px 0px #5c565c;
+        -moz-box-shadow: 0px 0px 20px 0px #5c565c;
+        box-shadow: 0px 0px 20px 0px #5c565c;
+        top: 5vh;
+        left: 5vw;
   
   
       .inner {
-        -webkit-clip-path: polygon(0 50%, 100% 30%, 100% 100%, 0% 100%);
-        -moz-clip-path: polygon(0 50%, 100% 30%, 100% 100%, 0% 100%);
-        -ms-clip-path: polygon(0 50%, 100% 30%, 100% 100%, 0% 100%);
-        -o-clip-path: polygon(0 50%, 100% 30%, 100% 100%, 0% 100%);
-        clip-path: polygon(0 50%, 100% 30%, 100% 100%, 0% 100%);
-;
+        -webkit-clip-path: polygon(0 60%, 100% 40%, 100% 100%, 0% 100%);
+        -moz-clip-path: polygon(0 60%, 100% 40%, 100% 100%, 0% 100%);
+        -ms-clip-path: polygon(0 60%, 100% 40%, 100% 100%, 0% 100%);
+        -o-clip-path: polygon(0 60%, 100% 40%, 100% 100%, 0% 100%);
+        clip-path: polygon(0 60%, 100% 40%, 100% 100%, 0% 100%);
+
       }
   
       &-inner {
+        height: 90%;
         &-logo {  
+          height: 50%;  
           margin-bottom: 4em;
+          
           img {
-            max-width: 75px;
+            max-width: 50%;
           }
         }
   
         &-wrap {
-          display: grid;
-          grid-template-columns: repeat(1, 1fr);
-          grid-gap: 4em;
+          display: block;
+          
 
           &-text {
               transform: translateY(0);
+              text-align: center;
+              font-size: 1.3rem;
+              line-height: 1.5;
+
+          }
+
+          &-link {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 10%;
           }
         }      
       }
