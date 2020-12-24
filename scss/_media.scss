@@ -17,6 +17,10 @@
     .white-space {
         height: 75px;
       }
+    
+    .white-space {
+        height: 5px;
+      }
 
     #header {
         .header-a {
@@ -51,11 +55,12 @@
                     display: flex;
                     flex-direction: column-reverse;
                     width: 100%;
-                    margin: auto;
+                    
 
                     img {
                         transform: none;
                         padding-bottom: 2em;
+                        margin: auto;
                     }
 
                     .home-btn {
@@ -70,8 +75,22 @@
         // Home B
         &-b {
             background: none !important;
+            
             .wrap {
+                display: flex;
+                flex-direction: column-reverse;
+                .img {
+                    margin: auto;
+                    width: 90%;
+                }
+                border-left: none;
+                border-top: none;
                 .bg-red {
+                    -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+                    -ms-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+                    -o-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+                    -moz-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+                    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
                     div {
                          p {
                             font-size: 28px;
@@ -80,7 +99,9 @@
                     }
                 }
             }
-            
+            .bottom-border-red {
+                display: none;
+              }
         }
 
         // Home C
@@ -153,7 +174,7 @@
                 .left {
                     p {
                         width: 100%;
-                        font-size: 28px;
+                        font-size: 22px;
                     }
                 }
 
@@ -257,9 +278,11 @@
         }
         // Home B
         &-b {
+            
             .wrap {
                 display: flex;
                 flex-direction: column-reverse;
+                
                 // Text
                 .bg-red {
                     -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
@@ -267,6 +290,7 @@
                     -o-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
                     -moz-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
                     clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+                    
                     div {
                         p {
                             font-size: 22px;

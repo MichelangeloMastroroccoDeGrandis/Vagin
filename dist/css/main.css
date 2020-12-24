@@ -234,6 +234,9 @@ img {
 .white-space {
   height: 100px; }
 
+.white-space-footer {
+  height: 125px; }
+
 #header .header-a {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
   -moz-clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
@@ -278,38 +281,47 @@ img {
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 2em; }
     #home-a .container .home-gif {
-      position: relative; }
+      position: relative;
+      text-align: center; }
       #home-a .container .home-gif img {
-        max-width: 500px;
-        -webkit-transform: translate(0%, -35%);
-        -ms-transform: translate(0%, -35%);
-        transform: translate(0%, -35%); }
+        max-width: 350px;
+        -webkit-transform: translate(-10%, -50%);
+        -ms-transform: translate(-10%, -50%);
+        transform: translate(-10%, -50%); }
       #home-a .container .home-gif .home-btn {
         position: absolute;
         top: 65%;
         width: 100%; }
 
-#home-b .wrap .bg-red {
-  -webkit-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
-  -moz-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
-  -ms-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
-  -o-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
-  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
-  -webkit-transform: scaleX(1.2) translateX(-8.4%);
-  -ms-transform: scaleX(1.2) translateX(-8.4%);
-  transform: scaleX(1.2) translateX(-8.4%); }
-  #home-b .wrap .bg-red div p {
-    font-size: 32px;
-    font-size: 1.5vw;
-    margin: 0 20% 0 30%;
-    text-align: justify;
-    -webkit-transform: scaleX(0.9) translateX(9.9999%);
-    -ms-transform: scaleX(0.9) translateX(9.9999%);
-    transform: scaleX(0.9) translateX(9.9999%); }
+#home-b .wrap {
+  border-left: 15px solid  #ff12a3;
+  border-top: 15px solid  #ff12a3; }
+  #home-b .wrap .bg-red {
+    -webkit-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+    -moz-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+    -ms-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+    -o-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+    -webkit-transform: scaleX(1.2) translateX(-8.4%);
+    -ms-transform: scaleX(1.2) translateX(-8.4%);
+    transform: scaleX(1.2) translateX(-8.4%); }
+    #home-b .wrap .bg-red div p {
+      font-size: 32px;
+      font-size: 1.5vw;
+      margin: 0 20% 0 30%;
+      text-align: justify;
+      -webkit-transform: scaleX(0.9) translateX(9.9999%);
+      -ms-transform: scaleX(0.9) translateX(9.9999%);
+      transform: scaleX(0.9) translateX(9.9999%); }
+  #home-b .wrap .img {
+    width: 100%;
+    margin: auto auto 0; }
 
-#home-b .wrap .img {
-  width: 100%;
-  margin: auto auto 0; }
+#home-b .bottom-border-red {
+  height: 15px;
+  width: calc(100% - 1px);
+  background-color: #ff12a3;
+  transform: translateY(-1px); }
 
 #home-c .wrap .bg-orange {
   position: relative;
@@ -332,9 +344,12 @@ img {
       padding: 1em 0; }
       #home-c .wrap .bg-orange ul li:nth-child(1) {
         max-width: 50%;
-        font-size: 1.8vw; }
+        font-size: 1.8vw;
+        font-weight: 900;
+        display: none; }
       #home-c .wrap .bg-orange ul li:nth-child(2) {
-        max-width: 80%; }
+        max-width: 80%;
+        display: none; }
         #home-c .wrap .bg-orange ul li:nth-child(2) div {
           position: relative;
           display: inline-grid;
@@ -357,6 +372,8 @@ img {
         font-size: 28px;
         font-size: 1.8vw;
         padding-top: 0; }
+        #home-c .wrap .bg-orange ul li:nth-child(3) span {
+          font-weight: 900; }
       #home-c .wrap .bg-orange ul li:nth-child(4) {
         max-width: 50%; }
         #home-c .wrap .bg-orange ul li:nth-child(4) form {
@@ -388,7 +405,7 @@ img {
                 outline: none; }
       #home-c .wrap .bg-orange ul li:nth-child(5) {
         max-width: 70%;
-        font-size: 1.2vw; }
+        font-size: 1.5vw; }
       #home-c .wrap .bg-orange ul li i {
         margin-right: 0.5em;
         color: #fff; }
@@ -423,7 +440,7 @@ img {
       #footer .footer-a .container .left a {
         color: #991199; }
     #footer .footer-a .container .center {
-      padding-top: 10em; }
+      padding-top: 5em; }
     #footer .footer-a .container .right h3 {
       font-size: 26px;
       font-weight: 900;
@@ -510,6 +527,8 @@ img {
     width: 90%; }
   .white-space {
     height: 75px; }
+  .white-space {
+    height: 5px; }
   #header .header-a .container p img {
     display: initial; }
   #home-a {
@@ -523,20 +542,36 @@ img {
       #home-a .container .home-gif {
         display: flex;
         flex-direction: column-reverse;
-        width: 100%;
-        margin: auto; }
+        width: 100%; }
         #home-a .container .home-gif img {
           transform: none;
-          padding-bottom: 2em; }
+          padding-bottom: 2em;
+          margin: auto; }
         #home-a .container .home-gif .home-btn {
           position: relative;
           width: initial;
           padding-bottom: 2em; }
   #home-b {
     background: none !important; }
-    #home-b .wrap .bg-red div p {
-      font-size: 28px;
-      text-align: center; }
+    #home-b .wrap {
+      display: flex;
+      flex-direction: column-reverse;
+      border-left: none;
+      border-top: none; }
+      #home-b .wrap .img {
+        margin: auto;
+        width: 90%; }
+      #home-b .wrap .bg-red {
+        -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+        -ms-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+        -o-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+        -moz-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+        clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%); }
+        #home-b .wrap .bg-red div p {
+          font-size: 28px;
+          text-align: center; }
+    #home-b .bottom-border-red {
+      display: none; }
   #home-c .wrap .bg-orange {
     min-width: 100%;
     max-width: 100%; }
@@ -578,7 +613,7 @@ img {
       margin-top: 2em; }
       #footer .footer-a .container .left p {
         width: 100%;
-        font-size: 28px; }
+        font-size: 22px; }
       #footer .footer-a .container .center {
         padding-top: .5em; }
         #footer .footer-a .container .center p {
