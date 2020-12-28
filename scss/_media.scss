@@ -469,7 +469,6 @@
         top: 5vh;
         left: 5vw;
   
-  
       .inner {
         -webkit-clip-path: polygon(0 60%, 100% 40%, 100% 100%, 0% 100%);
         -moz-clip-path: polygon(0 60%, 100% 40%, 100% 100%, 0% 100%);
@@ -484,22 +483,21 @@
         &-logo {  
           height: 50%;  
           margin-bottom: 4em;
-          
+        
           img {
-            max-width: 50%;
+            min-width: 50px;
+            width: 50%;
           }
         }
-  
+
         &-wrap {
           display: block;
           
-
           &-text {
               transform: translateY(0);
               text-align: center;
               font-size: 1.3rem;
               line-height: 1.5;
-
           }
 
           &-link {
@@ -513,4 +511,3 @@
     }
   }
 }
-

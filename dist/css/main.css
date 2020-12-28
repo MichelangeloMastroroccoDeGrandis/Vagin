@@ -775,7 +775,8 @@ img {
         height: 50%;
         margin-bottom: 4em; }
         #age_validification .modal-inner-logo img {
-          max-width: 50%; }
+          min-width: 50px;
+          width: 50%; }
       #age_validification .modal-inner-wrap {
         display: block; }
         #age_validification .modal-inner-wrap-text {
