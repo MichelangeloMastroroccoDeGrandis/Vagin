@@ -556,6 +556,7 @@ img {
     #home-b .wrap {
       display: flex;
       flex-direction: column-reverse;
+      min-height: 800px;
       border-left: none;
       border-top: none; }
       #home-b .wrap .img {
